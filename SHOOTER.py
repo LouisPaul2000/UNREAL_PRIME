@@ -8,7 +8,7 @@ from pyglet.window import key
 import os
 from datetime import datetime
 from pyglet.image.codecs.png import PNGImageDecoder
-directory = os.path.abspath(r'C:\Users\VIVEK MITTAL\Desktop\PYGLETPROJECT')
+directory = os.path.abspath(r'C:\Users\SHIVA\Desktop\PYGLETPROJECT')
 #directory = os.path.join(directory, 'images')
 start_time = None
 tutorial = 0
