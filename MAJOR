@@ -6,4 +6,4 @@ if x==1:
        os.system("python SHOOTER.py")
 
 if x==2:
-       os.system("python GAME2.py")
+       os.system("python FREE_ROAM_MOON.py")
