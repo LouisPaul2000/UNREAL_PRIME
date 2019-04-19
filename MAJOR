@@ -1,9 +1,9 @@
 import os
 
-x=int(raw_input("ENTER YOUR CHOICE(1-SHOOTER,2-MOONLAND "))
+x=int(input("ENTER YOUR CHOICE(1-SHOOTER,2-MOONLAND "))
 
 if x==1:
        os.system("python SHOOTER.py")
 
 if x==2:
-       os.system("python FREE_ROAM_MOON.py")
+       os.system("python GAME2.py")
