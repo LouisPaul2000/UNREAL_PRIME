@@ -1,4 +1,5 @@
 import random
+from pygame import mixer
 import pyglet
 from pyglet import window
 from pyglet import clock
@@ -8,12 +9,15 @@ from pyglet.window import key
 import os
 from datetime import datetime
 from pyglet.image.codecs.png import PNGImageDecoder
-directory = os.path.abspath(r'C:\Users\SHIVA\Desktop\PYGLETPROJECT')
+directory = os.path.abspath(r'C:\Users\VIVEK MITTAL\Desktop\PYGLETPROJECT')
 #directory = os.path.join(directory, 'images')
 start_time = None
 tutorial = 0
-
-#music=pyglet.resource.media('BACKscore.mp3',streaming=False)
+mixer.init()
+mixer.music.load("Ritviz.mp3")
+mixer.music.play()
+#print(directory+'\Ritviz.mp3')
+#music=pyglet.resource.media(os.curdir+'\Ritviz.mp3',streaming=False)
 #music.play()
 def image_loads(image_file_name):
     # load the image
@@ -484,6 +488,8 @@ class Monster(Sprite):
         self.x_velocity = random.randint(-2, 2)
 
 if __name__ == "__main__":
+    print("asdkhasljdl")
+    print(os.curdir)
     space = SpaceGameWindow(width=550, height=650)
     space.set_location(400, 50)
     space.main_loop()
